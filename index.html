@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma de Alfabetização Digital</title>
+  
+  <!-- Google Fonts: Playfair Display for elegant headers, Inter for clean body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#8B1E41">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Background Elements for Glassmorphism -->
+  <div class="bg-shape shape-1"></div>
+  <div class="bg-shape shape-2"></div>
+  
+  <header class="app-header">
+    <div class="logo">
+      <i class="fas fa-gem"></i> Mulheres Conectadas
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="content-wrapper">
+      <h1 id="page-title"></h1>
+      <p id="page-intro" class="intro"></p>
+
+      <div id="video-area" class="video-placeholder">
+        <!-- JS will populate iframe or hint here -->
+      </div>
+
+      <div id="actions" class="actions">
+        <!-- JS will populate buttons here -->
+      </div>
+    </div>
+  </main>
+  
+  <footer class="app-footer">
+    <p>&copy; 2026 Mulheres Conectadas. Feito para empreendedoras.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js')
+          .then(registration => {
+            console.log('ServiceWorker registered with scope:', registration.scope);
+          })
+          .catch(err => {
+            console.log('ServiceWorker registration failed:', err);
+          });
+      });
+    }
+  </script>
+
+</body>
+</html>

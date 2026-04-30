@@ -1,0 +1,17 @@
+{
+  "name": "Mulheres Conectadas",
+  "short_name": "Conectadas",
+  "description": "Plataforma de Alfabetização Digital para Mulheres Empreendedoras",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FBF9F6",
+  "theme_color": "#8B1E41",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2913/2913520.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
