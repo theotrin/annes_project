@@ -2,7 +2,7 @@ const pages = {
   index: {
     title: "Bem-vinda ao Mulheres Conectadas",
     intro: "Aqui, você aprende o que precisa pra fazer seu negócio crescer.\nTudo de um jeito simples, com vídeos e passos fáceis de seguir.\nDescubra como usar ferramentas gratuitas para divulgar seu trabalho, atrair clientes e se organizar melhor.\nVocê não precisa saber tudo. Só dar o primeiro passo.\n\nVamos juntas?",
-    video: null,
+    video: "https://www.youtube.com/embed/Zq3ho2SZNus",
     next: [
       { text: "Marketing Digital", target: "marketing" },
       { text: "Tecnologia para Negócios", target: "tecnologia" },
