@@ -1,11 +1,11 @@
 const pages = {
   index: {
     title: "Bem-vinda ao Mulheres Conectadas",
-    intro: "Aqui, você aprende o que precisa pra fazer seu negócio crescer.\nTudo de um jeito simples, com vídeos e passos fáceis de seguir.\nDescubra como usar ferramentas gratuitas para divulgar seu trabalho, atrair clientes e se organizar melhor.\nVocê não precisa saber tudo. Só dar o primeiro passo.\n\nVamos juntas?"
-
-    , video: "https://www.youtube.com/embed/Zq3ho2SZNus",
+    intro: "Aqui, você aprende o que precisa pra fazer seu negócio crescer.\nTudo de um jeito simples, com vídeos e passos fáceis de seguir.\nDescubra como usar ferramentas gratuitas para divulgar seu trabalho, atrair clientes e se organizar melhor.\nVocê não precisa saber tudo. Só dar o primeiro passo.\n\nVamos juntas?",
+    video: null,
     next: [
       { text: "Marketing Digital", target: "marketing" },
+      { text: "Tecnologia para Negócios", target: "tecnologia" },
       { text: "Planilhas e Organização", target: "planilhas" }
     ]
   },
@@ -112,5 +112,34 @@ Quando você se organiza, o negócio cresce.`
   }
 };
 
+  // -------------------------------------------------------
+  // 3. TECNOLOGIA
+  // -------------------------------------------------------
+  pages.tecnologia = {
+    title: "Tecnologias Para Negócios",
+    intro: `A tecnologia faz parte do dia a dia de quem vende, divulga e organiza um negócio.\nAprender recursos simples pode ajudar a conseguir clientes, facilitar pagamentos e tornar as vendas rápidas e práticas.\nCom pequenas ferramentas digitais, é possível economizar tempo, passar mais confiança e acompanhar as mudanças do mercado sem complicação.`,
+    video: null,
+    next: [
+      { text: "NFC", target: "nfc" },
+      { text: "QR CODE", target: "qrcode" },
+      { text: "Voltar à Capa", target: "index", klass: "back" }
+    ]
+  };
 
+  pages.nfc = {
+    title: "O que é NFC?",
+    intro: `Alguns celulares têm uma função chamada NFC, que permite fazer pagamentos por aproximação sem precisar de cartão físico.\nCom o NFC, você pode usar seu próprio celular como maquininha e aceitar pagamentos de clientes, facilitando suas vendas e não se limitar apenas ao Pix!\nÉ uma tecnologia prática, rápida e cada vez mais usada no dia a dia.\nAprenda como ativar, usar com segurança e facilitar suas vendas usando apenas o celular.`,
+    video: null,
+    next: [
+      { text: "Voltar à Capa", target: "index", klass: "back" }
+    ]
+  };
 
+  pages.qrcode = {
+    title: "QR CODES FACILITAM VENDAS",
+    intro: `QR Code é um código que pode ser escaneado pela câmera do celular para abrir links, fazer pagamentos rapidamente.\nHoje, muitos bancos usam QR Code para pagamentos via Pix, tornando as vendas mais rápidas e práticas para clientes e vendedores.\nAprenda como gerar seu próprio QR Code e como usar essa ferramenta para facilitar pagamentos no seu negócio.`,
+    video: null,
+    next: [
+      { text: "Voltar à Capa", target: "index", klass: "back" }
+    ]
+  };

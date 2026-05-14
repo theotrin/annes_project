@@ -6,11 +6,12 @@ function renderPage(name) {
 
   const videoArea = document.getElementById("video-area");
   if (page.video) {
+    videoArea.style.display = 'flex';
     videoArea.innerHTML = `<iframe src="${page.video}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
     videoArea.classList.remove('empty-video');
   } else {
-    videoArea.innerHTML = `<div class="hint"><i class="fas fa-video-slash"></i><br>Nenhum vídeo disponível nesta seção</div>`;
-    videoArea.classList.add('empty-video');
+    videoArea.style.display = 'none';
+    videoArea.innerHTML = '';
   }
 
   const actions = document.getElementById("actions");
